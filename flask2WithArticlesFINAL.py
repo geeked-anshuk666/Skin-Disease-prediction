@@ -15,15 +15,6 @@ CLASS_NAMES = ['Melanoma', 'Ringworm', 'Vitiligo', 'Warts', 'Normal']
 # Load your trained model
 model = load_model('trained_vgg_model_afterChangingDataset.keras')
 
-# # Dictionary mapping disease names to article website URLs
-# disease_articles = {
-#     # 'Actinic keratosis': 'https://example.com/actinic-keratosis-article',
-#     'Melanoma': 'https://www.healthline.com/health/skin-cancer/melanoma',
-#     'Ringworm': 'https://www.healthline.com/health/ringworm',
-#     'Vitiligo': 'https://www.healthline.com/health/skin-disorders/vitiligo-pictures',
-#     'Warts': 'https://www.healthline.com/health/skin/warts',
-#     'Normal': 'https://www.healthline.com/health/beauty-skin-care/skin-types-care'
-# }
 
 @app.route('/')
 def index():

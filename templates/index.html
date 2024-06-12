@@ -45,7 +45,7 @@
                 <a href="#prevent">Skin Types</a>
                 <a href="#check">Check Your Skin Disease</a>
                 <a href="#experts"> Our Team</a>
-                <a href="#footer">Contact</a>
+                <a href="#box p-3 m-2">Contact</a>
             </nav>
 
         </div>
@@ -175,45 +175,7 @@
         </div>
     </section>
 
-    <!-- prevent section ends -->
 
-    <!-- check -->
-
-<!--    <section class="check" id="check">-->
-
-<!--        <h1 class="heading"> <span>Check Your Skin Type</span> </h1>-->
-<!--        <div class="check">-->
-<!--            <form action="/predict" method="post" enctype="multipart/form-data">-->
-<!--                <div id="choose">-->
-<!--                    <input class="b1" type="file" name="image">-->
-<!--                </div>-->
-<!--                <input class="b2" type="submit" value="Predict">-->
-<!--            </form>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash; Add this section to your HTML template &ndash;&gt;-->
-<!--        &lt;!&ndash;<section class="prediction">&ndash;&gt;-->
-<!--        &lt;!&ndash;    <h2>Predicted Disease: {{ predicted_disease }}</h2>&ndash;&gt;-->
-<!--        &lt;!&ndash;</section>&ndash;&gt;-->
-<!--        &lt;!&ndash;    <section class="prediction">&ndash;&gt;-->
-<!--        &lt;!&ndash;    <h2>Predicted Disease: {{ predicted_disease }}</h2>&ndash;&gt;-->
-
-<!--        &lt;!&ndash;    <form action="/get_preliminary_treatment" method="post">&ndash;&gt;-->
-<!--        &lt;!&ndash;&lt;!&ndash;        <input type="text" name="predicted_disease" value="{{ predicted_disease }}">&ndash;&gt;&ndash;&gt;-->
-<!--        &lt;!&ndash;        <input type="submit" value="Get preliminary treatment">&ndash;&gt;-->
-<!--        &lt;!&ndash;    </form>&ndash;&gt;-->
-<!--        &lt;!&ndash;</section>&ndash;&gt;-->
-<!--        <section class="prediction">-->
-<!--            <h2>Predicted Disease: {{ predicted_disease }}</h2>-->
-
-<!--                <p>Probability: {{ probability }}%</p>-->
-<!--            {% if predicted_disease %}-->
-<!--            <a href="{{ url_for('get_preliminary_treatment', predicted_disease=predicted_disease) }}"-->
-<!--                class="link-btn">Get preliminary treatment</a>-->
-<!--            {% endif %}-->
-<!--        </section>-->
-
-<!--    </section>-->
     <section class="check" id="check">
     <h1 class="heading">Check Your Skin Disease</h1>
     <div class="check">
@@ -322,7 +284,7 @@
                     <a href="#prevent">skin type and disease</a>
                     <a href="#check">check my skin type</a>
                     <a href="#experts">our team</a>
-                    <a href="#">Contact</a>
+                    <a href="#1">Contact</a>
 
                 </div>
 
@@ -356,11 +318,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Update the popup content
             const predictedDiseaseElement = document.getElementById('predicted-disease');
-            const probabilityElement = document.getElementById('probability');
 
-            if (predictedDiseaseElement && probabilityElement) {
+
+            if (predictedDiseaseElement ) {
                 predictedDiseaseElement.textContent = `Predicted Disease: ${predictedDisease}`;
-                probabilityElement.textContent = `Probability: ${probability.toFixed(2)}%`;
+
             } else {
                 console.error('Predicted disease or probability element not found');
             }
